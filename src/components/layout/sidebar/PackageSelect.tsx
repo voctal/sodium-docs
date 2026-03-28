@@ -1,10 +1,10 @@
 "use client";
 
-import { useParams, useRouter } from "next/navigation";
-import { PACKAGES } from "@/lib/constants";
-import { Select, SelectContent, SelectItem, SelectTrigger } from "@/components/ui/select";
-import { DocsParams } from "@/lib/types";
 import { VscSymbolMethod } from "@react-icons/all-files/vsc/VscSymbolMethod";
+import { useParams, useRouter } from "next/navigation";
+import { Select, SelectContent, SelectItem, SelectTrigger } from "@/components/ui/select";
+import { PACKAGES } from "@/lib/constants";
+import { DocsParams } from "@/lib/types";
 
 export function PackageSelect() {
     const router = useRouter();

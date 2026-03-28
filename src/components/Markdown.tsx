@@ -1,12 +1,12 @@
 import Link from "next/link";
 import { PropsWithChildren } from "react";
 import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
-import { SyntaxHighlighter } from "./SyntaxHighlighter";
-import { Scrollbars } from "./OverlayScrollbars";
-import { MarkdownImage } from "./MarkdownImage";
+import remarkGfm from "remark-gfm";
 import { cn } from "@/lib/utils";
+import { MarkdownImage } from "./MarkdownImage";
+import { Scrollbars } from "./OverlayScrollbars";
+import { SyntaxHighlighter } from "./SyntaxHighlighter";
 
 export function Markdown({
     children,

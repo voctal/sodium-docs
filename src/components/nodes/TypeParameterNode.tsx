@@ -1,13 +1,13 @@
-import { Fragment } from "react";
-import Link from "next/link";
 import { LinkIcon } from "lucide-react";
+import Link from "next/link";
+import { Fragment } from "react";
 import { TypeParameter } from "@/lib/docs/types";
-import { cn } from "@/lib/utils";
 import { resolveNodeKindSpanClass } from "@/lib/kind";
+import { cn } from "@/lib/utils";
 import { Badges } from "../Badges";
+import { ContentSeparator } from "../ContentSeparator";
 import { CommentNode } from "./CommentNode";
 import { ExcerptNode } from "./ExcerptNode";
-import { ContentSeparator } from "../ContentSeparator";
 
 export async function TypeParameterNode({
     description = false,

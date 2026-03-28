@@ -1,27 +1,27 @@
 import { VscSymbolParameter } from "@react-icons/all-files/vsc/VscSymbolParameter";
+import { Node } from "@/lib/docs/types";
 import { ConstructorNode } from "./nodes/ConstructorNode";
 import { DeprecatedNode } from "./nodes/DeprecatedNode";
 import { EnumMemberNode } from "./nodes/EnumMemberNode";
 import { EventNode } from "./nodes/EventNode";
+import { ExampleNode } from "./nodes/ExampleNode";
 import { InformationNode } from "./nodes/InformationNode";
 import { MethodNode } from "./nodes/MethodNode";
-import { Outline } from "./Outline";
-import { Scrollbars } from "./OverlayScrollbars";
+import { ParameterCommentNode } from "./nodes/ParameterCommentNode";
 import { ParameterNode } from "./nodes/ParameterNode";
 import { PropertyNode } from "./nodes/PropertyNode";
+import { RemarksNode } from "./nodes/RemarksNode";
 import { ReturnNode } from "./nodes/ReturnNode";
 import { SeeNode } from "./nodes/SeeNode";
 import { SummaryNode } from "./nodes/SummaryNode";
+import { ThrowsNode } from "./nodes/ThrowsNode";
 import { TypeParameterNode } from "./nodes/TypeParameterNode";
 import { UnionMember } from "./nodes/UnionMember";
-import { Tab, TabList, TabPanel, Tabs } from "./ui/tabs";
-import { Node } from "@/lib/docs/types";
 import { UnstableNode } from "./nodes/UnstableNode";
+import { Outline } from "./Outline";
+import { Scrollbars } from "./OverlayScrollbars";
 import { SyntaxHighlighter } from "./SyntaxHighlighter";
-import { ExampleNode } from "./nodes/ExampleNode";
-import { RemarksNode } from "./nodes/RemarksNode";
-import { ThrowsNode } from "./nodes/ThrowsNode";
-import { ParameterCommentNode } from "./nodes/ParameterCommentNode";
+import { Tab, TabList, TabPanel, Tabs } from "./ui/tabs";
 
 async function OverloadNode({
     node,

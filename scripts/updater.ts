@@ -1,7 +1,7 @@
+import { existsSync } from "node:fs";
 import { mkdir, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { generateSplitDocumentation } from "./chunk-docs";
-import { existsSync } from "node:fs";
 
 let started = false;
 

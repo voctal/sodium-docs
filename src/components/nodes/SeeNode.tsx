@@ -1,5 +1,5 @@
-import { cn } from "@/lib/utils";
 import { KindTextElement } from "@/lib/docs/types";
+import { cn } from "@/lib/utils";
 import { CommentNode } from "./CommentNode";
 
 export async function SeeNode({

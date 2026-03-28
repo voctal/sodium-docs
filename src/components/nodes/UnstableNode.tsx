@@ -1,6 +1,6 @@
 import { KindTextElement } from "@/lib/docs/types";
-import { CommentNode } from "./CommentNode";
 import { Alert } from "../Alert";
+import { CommentNode } from "./CommentNode";
 
 export async function UnstableNode({
     unstableBlock,

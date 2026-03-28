@@ -1,12 +1,12 @@
+import { LinkIcon } from "lucide-react";
 import Link from "next/link";
 import { Fragment } from "react";
-import { LinkIcon } from "lucide-react";
 import { Parameter } from "@/lib/docs/types";
 import { resolveNodeKindSpanClass } from "@/lib/kind";
 import { Badges } from "../Badges";
+import { ContentSeparator } from "../ContentSeparator";
 import { CommentNode } from "./CommentNode";
 import { ExcerptNode } from "./ExcerptNode";
-import { ContentSeparator } from "../ContentSeparator";
 
 export async function ParameterNode({
     description = false,

@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { FileCode2 } from "lucide-react";
+import Link from "next/link";
 import { Node } from "@/lib/docs/types";
 import { Badges } from "../Badges";
 import { NodeKindDisplay } from "../NodeKindDisplay";

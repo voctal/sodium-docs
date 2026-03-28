@@ -1,12 +1,12 @@
-import Link from "next/link";
-import { Fragment } from "react";
 import { VscSymbolProperty } from "@react-icons/all-files/vsc/VscSymbolProperty";
 import { ChevronDown, ChevronUp, Code2, LinkIcon } from "lucide-react";
+import Link from "next/link";
+import { Fragment } from "react";
 import { Property } from "@/lib/docs/types";
 import { resolveNodeKindSpanClass } from "@/lib/kind";
-import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "../ui/collapsible";
-import { ContentSeparator } from "../ContentSeparator";
 import { Badges } from "../Badges";
+import { ContentSeparator } from "../ContentSeparator";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "../ui/collapsible";
 import { DeprecatedNode } from "./DeprecatedNode";
 import { ExcerptNode } from "./ExcerptNode";
 import { InheritedFromNode } from "./InheritedFromNode";

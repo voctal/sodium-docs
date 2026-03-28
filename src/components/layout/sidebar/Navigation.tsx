@@ -4,11 +4,11 @@ import { useQuery } from "@tanstack/react-query";
 import { ChevronDown, ChevronUp, Loader2Icon } from "lucide-react";
 import { notFound, useParams } from "next/navigation";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
-import { NavigationItem } from "./NavigationItem";
 import { parseDocsPathParams } from "@/lib/docs/parseDocsPathParams";
-import { resolveNodeKindColor } from "@/lib/kind";
 import { PackageSitemap } from "@/lib/docs/types";
+import { resolveNodeKindColor } from "@/lib/kind";
 import { DocsParams } from "@/lib/types";
+import { NavigationItem } from "./NavigationItem";
 
 export function Navigation() {
     const params = useParams<DocsParams>();

@@ -1,11 +1,11 @@
+import { createSingletonShorthands, createBundledHighlighter } from "shiki/core";
+import { createJavaScriptRegexEngine } from "shiki/engine-javascript.mjs";
 /* Generate by @shikijs/codegen */
 import type {
     DynamicImportLanguageRegistration,
     DynamicImportThemeRegistration,
     HighlighterGeneric,
 } from "shiki/types";
-import { createSingletonShorthands, createBundledHighlighter } from "shiki/core";
-import { createJavaScriptRegexEngine } from "shiki/engine-javascript.mjs";
 
 type BundledLanguage = "typescript" | "ts" | "javascript" | "js" | "shellscript" | "bash" | "sh" | "shell" | "zsh";
 type BundledTheme = "github-light" | "github-dark-dimmed";

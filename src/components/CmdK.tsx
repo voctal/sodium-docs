@@ -1,19 +1,19 @@
 "use client";
 
+import { DialogTitle } from "@radix-ui/react-dialog";
 import { Command } from "cmdk";
 import { useAtom, useSetAtom } from "jotai";
 import { ArrowRight } from "lucide-react";
 import dynamic from "next/dynamic";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { VisuallyHidden } from "react-aria-components";
 import { useDebounceValue, useMediaQuery } from "usehooks-ts";
 import { Scrollbars } from "@/components/OverlayScrollbars";
-import { isCmdKOpenAtom, isDrawerOpenAtom } from "@/stores/docs";
-import { cn } from "@/lib/utils";
 import { resolveKindIcon, resolveNodeKindSpanClass } from "@/lib/kind";
 import { SearchResult } from "@/lib/types";
-import { DialogTitle } from "@radix-ui/react-dialog";
-import { VisuallyHidden } from "react-aria-components";
+import { cn } from "@/lib/utils";
+import { isCmdKOpenAtom, isDrawerOpenAtom } from "@/stores/docs";
 
 export function CmdK({ dependencies }: { readonly dependencies: string[] }) {
     const pathname = usePathname();

@@ -1,10 +1,10 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { DocItem } from "@/components/DocItem";
-import { parseDocsPathParams } from "@/lib/docs/parseDocsPathParams";
-import { fetchNode } from "@/lib/docs/fetchNode";
 import { Markdown } from "@/components/Markdown";
 import { fetchHome } from "@/lib/docs/fetchHome";
+import { fetchNode } from "@/lib/docs/fetchNode";
+import { parseDocsPathParams } from "@/lib/docs/parseDocsPathParams";
 
 export async function generateMetadata({
     params,

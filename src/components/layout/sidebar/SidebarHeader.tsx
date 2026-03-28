@@ -1,18 +1,18 @@
 "use client";
 
+import { VscGithubInverted } from "@react-icons/all-files/vsc/VscGithubInverted";
+import { useQuery } from "@tanstack/react-query";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { VscGithubInverted } from "@react-icons/all-files/vsc/VscGithubInverted";
 import { FaDiscord } from "react-icons/fa";
-import { useQuery } from "@tanstack/react-query";
 import { DISCORD_URL, GITHUB_URL, PACKAGES_WITH_ENTRY_POINTS } from "@/lib/constants";
-import { DocsParams } from "@/lib/types";
-import { PackageSelect } from "./PackageSelect";
 import { PackageEntryPoint, PackageVersion } from "@/lib/docs/types";
-import { VersionSelect } from "./VersionSelect";
+import { DocsParams } from "@/lib/types";
 import { EntryPointSelect } from "./EntrypointSelect";
+import { PackageSelect } from "./PackageSelect";
 import { SearchButton } from "./SearchButton";
 import { Settings } from "./Settings";
+import { VersionSelect } from "./VersionSelect";
 
 export function SidebarHeader() {
     const params = useParams<DocsParams>();

@@ -1,12 +1,12 @@
 "use client";
 
-import { PackageSitemap } from "@/lib/docs/types";
-import { cn } from "@/lib/utils";
-import { isDrawerOpenAtom } from "@/stores/docs";
 import { useSetAtom } from "jotai";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import type { PropsWithChildren } from "react";
+import { PackageSitemap } from "@/lib/docs/types";
+import { cn } from "@/lib/utils";
+import { isDrawerOpenAtom } from "@/stores/docs";
 
 export function NavigationItem({
     node,

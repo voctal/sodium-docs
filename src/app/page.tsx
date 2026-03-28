@@ -1,6 +1,6 @@
+import { BookIcon, RssIcon } from "lucide-react";
 import Link from "next/link";
 import { FaGithub, FaDiscord } from "react-icons/fa";
-import { BookIcon, RssIcon } from "lucide-react";
 import VoctalIcon from "@/icons/brands/VoctalIcon";
 import { DISCORD_URL, GITHUB_URL, VOCTAL_URL, STATUS_URL } from "@/lib/constants";
 

@@ -1,6 +1,6 @@
-import { unstable_cache } from "next/cache";
 import { readdir } from "node:fs/promises";
 import { join } from "node:path";
+import { unstable_cache } from "next/cache";
 import { PackageVersion } from "./types";
 import { isValidPackage } from "./validation";
 

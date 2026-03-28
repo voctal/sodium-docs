@@ -1,10 +1,10 @@
 "use client";
 
 import "overlayscrollbars/overlayscrollbars.css";
-import { cn } from "@/lib/utils";
 import { OverlayScrollbars, ClickScrollPlugin } from "overlayscrollbars";
 import type { OverlayScrollbarsComponentProps } from "overlayscrollbars-react";
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
+import { cn } from "@/lib/utils";
 
 OverlayScrollbars.plugin(ClickScrollPlugin);
 

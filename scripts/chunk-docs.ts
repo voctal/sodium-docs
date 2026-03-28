@@ -49,8 +49,8 @@ import {
     type DeclarationReference,
     type ModuleSource,
 } from "@microsoft/tsdoc/lib-commonjs/beta/DeclarationReference.js";
-import { BuiltinDocumentationLinks } from "../src/lib/docs/builtinLinks";
 import { PACKAGES, NPM_USER } from "../src/lib/constants";
+import { BuiltinDocumentationLinks } from "../src/lib/docs/builtinLinks";
 import { Event } from "../src/lib/docs/types";
 
 interface Options {

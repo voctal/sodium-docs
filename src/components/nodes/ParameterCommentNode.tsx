@@ -1,8 +1,8 @@
 import { VscSymbolField } from "react-icons/vsc";
-import { cn } from "@/lib/utils";
 import { Parameter } from "@/lib/docs/types";
-import { CommentNode } from "./CommentNode";
 import { resolveNodeKindSpanClass } from "@/lib/kind";
+import { cn } from "@/lib/utils";
+import { CommentNode } from "./CommentNode";
 
 export async function ParameterCommentNode({
     padding = false,

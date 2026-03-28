@@ -1,8 +1,8 @@
 "use client";
 
 import { useAtom } from "jotai";
-import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
+import { Switch } from "@/components/ui/switch";
 import { showProtectedAtom } from "@/stores/docs";
 
 export function Settings() {

@@ -1,5 +1,5 @@
-import type { PropsWithChildren } from "react";
 import { AlertTriangle } from "lucide-react";
+import type { PropsWithChildren } from "react";
 import { Node } from "@/lib/docs/types";
 import { cn } from "@/lib/utils";
 

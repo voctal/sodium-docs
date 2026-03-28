@@ -1,10 +1,11 @@
-import Link from "next/link";
-import { Fragment } from "react";
 import { VscSymbolEnumMember } from "@react-icons/all-files/vsc/VscSymbolEnumMember";
 import { Code2, LinkIcon } from "lucide-react";
-import { resolveNodeKindSpanClass } from "@/lib/kind";
+import Link from "next/link";
+import { Fragment } from "react";
 import { EnumMember } from "@/lib/docs/types";
+import { resolveNodeKindSpanClass } from "@/lib/kind";
 import { Badges } from "../Badges";
+import { ContentSeparator } from "../ContentSeparator";
 import { DeprecatedNode } from "./DeprecatedNode";
 import { ExampleNode } from "./ExampleNode";
 import { ExcerptNode } from "./ExcerptNode";
@@ -12,7 +13,6 @@ import { ReturnNode } from "./ReturnNode";
 import { SeeNode } from "./SeeNode";
 import { SummaryNode } from "./SummaryNode";
 import { UnstableNode } from "./UnstableNode";
-import { ContentSeparator } from "../ContentSeparator";
 
 export async function EnumMemberNode({ node, version }: { readonly node: EnumMember[]; readonly version: string }) {
     return (

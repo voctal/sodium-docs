@@ -1,15 +1,15 @@
-import Link from "next/link";
 import { VscSymbolMethod } from "@react-icons/all-files/vsc/VscSymbolMethod";
 import { Code2, LinkIcon } from "lucide-react";
+import Link from "next/link";
 import { Constructor } from "@/lib/docs/types";
 import { resolveNodeKindSpanClass } from "@/lib/kind";
 import { Badges } from "../Badges";
+import { ContentSeparator } from "../ContentSeparator";
 import { ExampleNode } from "./ExampleNode";
+import { ParameterCommentNode } from "./ParameterCommentNode";
 import { ParameterNode } from "./ParameterNode";
 import { SeeNode } from "./SeeNode";
 import { SummaryNode } from "./SummaryNode";
-import { ContentSeparator } from "../ContentSeparator";
-import { ParameterCommentNode } from "./ParameterCommentNode";
 
 export async function ConstructorNode({ node, version }: { readonly node: Constructor; readonly version: string }) {
     return (

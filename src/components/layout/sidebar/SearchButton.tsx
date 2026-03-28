@@ -2,8 +2,8 @@
 
 import { useSetAtom } from "jotai";
 import { Command, Search } from "lucide-react";
-import { isCmdKOpenAtom } from "@/stores/docs";
 import { useSidebar } from "@/components/ui/sidebar";
+import { isCmdKOpenAtom } from "@/stores/docs";
 
 export function SearchButton() {
     const { setOpenMobile } = useSidebar();

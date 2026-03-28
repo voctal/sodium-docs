@@ -1,7 +1,7 @@
-import { Sidebar, SidebarContent } from "@/components/ui/sidebar";
 import { Scrollbars } from "@/components/OverlayScrollbars";
-import { SidebarHeader } from "./SidebarHeader";
+import { Sidebar, SidebarContent } from "@/components/ui/sidebar";
 import { Navigation } from "./Navigation";
+import { SidebarHeader } from "./SidebarHeader";
 
 export function DocSidebar() {
     return (

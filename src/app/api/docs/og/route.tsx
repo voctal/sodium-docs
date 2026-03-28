@@ -1,5 +1,5 @@
-import { NextRequest, NextResponse } from "next/server";
 import { ImageResponse } from "next/og";
+import { NextRequest, NextResponse } from "next/server";
 import { resolveKindIcon, resolveNodeKindSpanClass } from "@/lib/kind";
 import { cn } from "@/lib/utils";
 
@@ -48,8 +48,10 @@ export async function GET(req: NextRequest) {
                     <div tw={cn(resolveNodeKindSpanClass(kind), "flex items-start text-white text-7xl mt-12")}>
                         {resolveKindIcon(kind, 64)}
                         <div tw="flex flex-col -mt-1">
-                            {wrappedName.map(n => (
-                                <span tw="ml-4">{n}</span>
+                            {wrappedName.map((n, i) => (
+                                <span key={i} tw="ml-4">
+                                    {n}
+                                </span>
                             ))}
                         </div>
                     </div>

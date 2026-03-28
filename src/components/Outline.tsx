@@ -1,15 +1,15 @@
-import Link from "next/link";
-import { Fragment } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { IconType } from "@react-icons/all-files/lib";
 import { VscListSelection } from "@react-icons/all-files/vsc/VscListSelection";
 import { VscSymbolEvent } from "@react-icons/all-files/vsc/VscSymbolEvent";
 import { VscSymbolMethod } from "@react-icons/all-files/vsc/VscSymbolMethod";
 import { VscSymbolProperty } from "@react-icons/all-files/vsc/VscSymbolProperty";
-import { IconType } from "@react-icons/all-files/lib";
+import { ChevronDown, ChevronUp } from "lucide-react";
+import Link from "next/link";
+import { Fragment } from "react";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { Member, Node } from "@/lib/docs/types";
-import { cn } from "@/lib/utils";
 import { resolveNodeKindLinkClass } from "@/lib/kind";
+import { cn } from "@/lib/utils";
 import { ContentSeparator } from "./ContentSeparator";
 
 export async function Outline({ node }: { readonly node: Node }) {

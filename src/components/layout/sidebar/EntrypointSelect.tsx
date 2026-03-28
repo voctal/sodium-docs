@@ -1,12 +1,12 @@
 "use client";
 
-import Link from "next/link";
 import { Loader2Icon } from "lucide-react";
+import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { parseDocsPathParams } from "@/lib/docs/parseDocsPathParams";
-import { DocsParams } from "@/lib/types";
 import { PackageEntryPoint } from "@/lib/docs/types";
+import { DocsParams } from "@/lib/types";
 
 export function EntryPointSelect({
     entryPoints,
@@ -41,7 +41,7 @@ export function EntryPointSelect({
             </SelectTrigger>
             <SelectContent position="popper">
                 {entryPoints.map(item => (
-                    <SelectItem value={item.entryPoint} asChild>
+                    <SelectItem key={item.entryPoint} value={item.entryPoint} asChild>
                         <Link
                             className="dark:pressed:bg-[#313135] bg-[#f3f3f4] dark:bg-[#28282d] dark:hover:bg-[#313135]"
                             href={`/docs/packages/${params.packageName}/${params.version}/${item.entryPoint}`}

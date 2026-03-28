@@ -1,19 +1,19 @@
-import Link from "next/link";
 import { VscSymbolEvent } from "@react-icons/all-files/vsc/VscSymbolEvent";
 import { ChevronDown, ChevronUp, Code2, LinkIcon } from "lucide-react";
+import Link from "next/link";
+import { Event } from "@/lib/docs/types";
 import { Badges } from "../Badges";
+import { ContentSeparator } from "../ContentSeparator";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "../ui/collapsible";
 import { DeprecatedNode } from "./DeprecatedNode";
 import { ExampleNode } from "./ExampleNode";
+import { ExcerptNode } from "./ExcerptNode";
 import { InheritedFromNode } from "./InheritedFromNode";
 import { ReturnNode } from "./ReturnNode";
 import { SeeNode } from "./SeeNode";
 import { SummaryNode } from "./SummaryNode";
 import { TypeParameterNode } from "./TypeParameterNode";
 import { UnstableNode } from "./UnstableNode";
-import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "../ui/collapsible";
-import { Event } from "@/lib/docs/types";
-import { ContentSeparator } from "../ContentSeparator";
-import { ExcerptNode } from "./ExcerptNode";
 
 export async function EventNode({
     node,

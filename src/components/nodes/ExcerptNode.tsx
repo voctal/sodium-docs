@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { Fragment } from "react";
+import { PACKAGES } from "@/lib/constants";
 import { BuiltinDocumentationLinks } from "@/lib/docs/builtinLinks";
 import { ExcerptElement } from "@/lib/docs/types";
 import { resolveNodeKindLinkClass } from "@/lib/kind";
 import { cn } from "@/lib/utils";
-import { PACKAGES } from "@/lib/constants";
 
 export async function ExcerptNode({
     node,

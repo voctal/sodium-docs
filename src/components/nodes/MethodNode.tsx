@@ -1,25 +1,25 @@
-import Link from "next/link";
-import { ChevronDown, ChevronUp, Code2, LinkIcon } from "lucide-react";
 import { VscSymbolMethod } from "@react-icons/all-files/vsc/VscSymbolMethod";
-import { resolveNodeKindSpanClass } from "@/lib/kind";
+import { ChevronDown, ChevronUp, Code2, LinkIcon } from "lucide-react";
+import Link from "next/link";
 import { Method, MethodOverload } from "@/lib/docs/types";
+import { resolveNodeKindSpanClass } from "@/lib/kind";
 import { cn } from "@/lib/utils";
 import { Badges } from "../Badges";
+import { ContentSeparator } from "../ContentSeparator";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "../ui/collapsible";
 import { DeprecatedNode } from "./DeprecatedNode";
 import { ExampleNode } from "./ExampleNode";
 import { ExcerptNode } from "./ExcerptNode";
 import { InheritedFromNode } from "./InheritedFromNode";
+import { OverloadNode } from "./OverloadNode";
+import { ParameterCommentNode } from "./ParameterCommentNode";
 import { ParameterNode } from "./ParameterNode";
 import { ReturnNode } from "./ReturnNode";
 import { SeeNode } from "./SeeNode";
 import { SummaryNode } from "./SummaryNode";
+import { ThrowsNode } from "./ThrowsNode";
 import { TypeParameterNode } from "./TypeParameterNode";
 import { UnstableNode } from "./UnstableNode";
-import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "../ui/collapsible";
-import { ContentSeparator } from "../ContentSeparator";
-import { OverloadNode } from "./OverloadNode";
-import { ThrowsNode } from "./ThrowsNode";
-import { ParameterCommentNode } from "./ParameterCommentNode";
 
 export async function MethodNode({
     node,

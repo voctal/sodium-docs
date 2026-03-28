@@ -1,10 +1,10 @@
 "use client";
 
-import { ClassAttributes, ImgHTMLAttributes } from "react";
 import { useParams } from "next/navigation";
-import { DocsParams } from "@/lib/types";
+import { ClassAttributes, ImgHTMLAttributes } from "react";
 import { PACKAGES } from "@/lib/constants";
 import { resolvePackageImageURL } from "@/lib/links";
+import { DocsParams } from "@/lib/types";
 
 export function MarkdownImage(props: ClassAttributes<HTMLImageElement> & ImgHTMLAttributes<HTMLImageElement>) {
     const params = useParams<DocsParams | {}>();
