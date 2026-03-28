@@ -1,20 +1,20 @@
 import Link from "next/link";
 import { FaGithub, FaDiscord } from "react-icons/fa";
 import { BookIcon, RssIcon } from "lucide-react";
-import SodiumLabsIcon from "@/icons/brands/SodiumLabsIcon";
-import { DISCORD_URL, GITHUB_URL, SODIUM_LABS_URL, STATUS_URL } from "@/lib/constants";
+import VoctalIcon from "@/icons/brands/VoctalIcon";
+import { DISCORD_URL, GITHUB_URL, VOCTAL_URL, STATUS_URL } from "@/lib/constants";
 
 export default () => {
     return (
         <div className="grid min-h-screen grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 p-8 pb-20 sm:p-20">
             <main className="row-start-2 flex flex-col items-center gap-8 sm:items-start">
                 <div className="mx-auto flex items-center gap-2">
-                    <SodiumLabsIcon className="size-24" />
-                    <span className="text-4xl font-semibold">Sodium Docs</span>
+                    <VoctalIcon className="size-24" />
+                    <span className="text-4xl font-semibold">Voctal Docs</span>
                 </div>
 
                 <ol className="text-md/6 list-inside text-center font-mono sm:text-left">
-                    <li className="mb-2 tracking-[-.01em]">The official docs of all Sodium packages</li>
+                    <li className="mb-2 tracking-[-.01em]">The official docs of all Voctal packages</li>
                 </ol>
 
                 <div className="mx-auto flex flex-col items-center gap-4 sm:flex-row">
@@ -44,12 +44,12 @@ export default () => {
                 <Link
                     prefetch={false}
                     className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                    href={SODIUM_LABS_URL}
+                    href={VOCTAL_URL}
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <SodiumLabsIcon />
-                    Sodium Labs
+                    <VoctalIcon />
+                    Voctal
                 </Link>
                 <Link
                     prefetch={false}

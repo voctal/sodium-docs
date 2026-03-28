@@ -1,7 +1,7 @@
 import { unstable_cache } from "next/cache";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
-import { PACKAGES, SODIUM_LABS_NPM_USER } from "../constants";
+import { PACKAGES, NPM_USER } from "../constants";
 import { PackageDependencies } from "./types";
 import { isValidPackage } from "./validation";
 
@@ -25,7 +25,7 @@ const fetchDependenciesCached = unstable_cache(
                 .filter(([key]) => PACKAGES.some(p => key === `${p.user ? `${p.user}/` : ""}${p}`))
                 .map(
                     ([key, value]) =>
-                        `${key.replace(`${SODIUM_LABS_NPM_USER}/`, "").replaceAll(".", "-")}-${sanitizeVersion(value)}`,
+                        `${key.replace(`${NPM_USER}/`, "").replaceAll(".", "-")}-${sanitizeVersion(value)}`,
                 );
         } catch (err) {
             console.error(err);

@@ -42,7 +42,7 @@ export async function GET(req: NextRequest) {
             <div tw="flex h-full w-full" style={{ background: "linear-gradient(to top right, #1c3047f0, #121214)" }}>
                 <div tw="flex flex-col m-24">
                     <div tw="flex flex-col text-5xl text-blue-400 leading-tight">
-                        <div tw="flex flex-row">@sodiumlabs/{pkg}</div>
+                        <div tw="flex flex-row">@voctal/{pkg}</div>
                     </div>
 
                     <div tw={cn(resolveNodeKindSpanClass(kind), "flex items-start text-white text-7xl mt-12")}>
@@ -61,7 +61,7 @@ export async function GET(req: NextRequest) {
             fonts: [
                 {
                     name: "Geist",
-                    data: await loadGoogleFont("Geist:wght@900", "@sodiumlabs/" + pkg + name),
+                    data: await loadGoogleFont("Geist:wght@900", "@voctal/" + pkg + name),
                     weight: 900,
                     style: "normal",
                 },

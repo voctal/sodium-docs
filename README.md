@@ -1,11 +1,11 @@
-# Sodium Docs
+# Voctal Docs
 
-This repository contains the source code for the [Sodium Docs website](https://docs.sodiumlabs.xyz). The project is still under development, so you may encounter issues. If you need help, join [our Discord server](https://discord.gg/8PDXWSHH7k).
+This repository contains the source code for the [Voctal Docs website](https://docs.voctal.dev). The project is still under development, so you may encounter issues. If you need help, join [our Discord server](https://voctal.dev/discord).
 
 ## Packages
 
 Each package generates its documentation as a JSON file, which is automatically pushed to
-[https://github.com/sodium-labs/artifacts](https://github.com/sodium-labs/artifacts).
+[https://github.com/voctal/artifacts](https://github.com/voctal/artifacts).
 
 The documentation website fetches these files and uses them to generate the documentation pages automatically.
 

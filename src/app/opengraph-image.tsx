@@ -23,8 +23,8 @@ async function loadGoogleFont(font: string, text: string) {
 }
 
 export default async function Image() {
-    const title = "Sodium Docs";
-    const subtitle1 = "The official docs of the Sodium packages.";
+    const title = "Voctal Docs";
+    const subtitle1 = "The official docs of the Voctal packages.";
 
     return new ImageResponse(
         <div

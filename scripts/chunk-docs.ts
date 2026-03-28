@@ -50,7 +50,7 @@ import {
     type ModuleSource,
 } from "@microsoft/tsdoc/lib-commonjs/beta/DeclarationReference.js";
 import { BuiltinDocumentationLinks } from "../src/lib/docs/builtinLinks";
-import { PACKAGES, SODIUM_LABS_NPM_USER } from "../src/lib/constants";
+import { PACKAGES, NPM_USER } from "../src/lib/constants";
 import { Event } from "../src/lib/docs/types";
 
 interface Options {
@@ -171,7 +171,7 @@ function resolveCanonicalReference(
     ) {
         const member = canonicalReference.memberReferences[0]!;
         return {
-            package: canonicalReference.packageName?.replace(`${SODIUM_LABS_NPM_USER}/`, ""),
+            package: canonicalReference.packageName?.replace(`${NPM_USER}/`, ""),
             item: {
                 kind: member.selector!.selector,
                 displayName: member.memberIdentifier!.identifier,
@@ -260,7 +260,7 @@ function itemExcerptText(excerpt: Excerpt, apiPackage: ApiPackage, parent?: ApiT
                         displayName: foundItem.displayName,
                         containerKey: foundItem.containerKey,
                         uri: resolveItemURI(foundItem),
-                        packageName: resolved.package?.replace(`${SODIUM_LABS_NPM_USER}/`, ""),
+                        packageName: resolved.package?.replace(`${NPM_USER}/`, ""),
                         version: resolved.version,
                     },
                 };
@@ -282,7 +282,7 @@ function itemExcerptText(excerpt: Excerpt, apiPackage: ApiPackage, parent?: ApiT
                         displayName: token.text,
                         containerKey: `${parent.containerKey}|${token.text}`,
                         uri: `${resolveItemURI(parent)}#${token.text}`,
-                        packageName: resolvedParent?.package?.replace(`${SODIUM_LABS_NPM_USER}/`, ""),
+                        packageName: resolvedParent?.package?.replace(`${NPM_USER}/`, ""),
                     },
                 };
             }
@@ -367,7 +367,7 @@ function itemTsDoc(item: DocNode, apiItem: ApiItem) {
                         resolvedPackage: {
                             packageName:
                                 resolved?.package ??
-                                apiItem.getAssociatedPackage()?.displayName.replace(`${SODIUM_LABS_NPM_USER}/`, ""),
+                                apiItem.getAssociatedPackage()?.displayName.replace(`${NPM_USER}/`, ""),
                             version: resolved?.package
                                 ? (apiItem.getAssociatedPackage()?.dependencies?.[resolved.package] ?? null)
                                 : null,
@@ -526,7 +526,7 @@ function resolveFileUrl(item: ApiDeclaredItem, options: Options) {
     } = item;
 
     const tag = options.monorepo
-        ? encodeURIComponent(`${SODIUM_LABS_NPM_USER}/${options.packageName}@${options.version}`)
+        ? encodeURIComponent(`${NPM_USER}/${options.packageName}@${options.version}`)
         : `v${options.version}`;
 
     return {

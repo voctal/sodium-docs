@@ -9,7 +9,7 @@ export async function generateMetadata({
 
     return {
         title: {
-            template: "%s | Sodium",
+            template: "%s | Voctal",
             default: `${packageName} (${version})`,
         },
     };

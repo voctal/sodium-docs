@@ -17,11 +17,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
     metadataBase: new URL(BASE_URL),
     title: {
-        template: "%s | Sodium",
-        default: "Sodium Docs",
+        template: "%s | Voctal",
+        default: "Voctal Docs",
     },
     description: DESCRIPTION,
-    keywords: ["docs", "documentation", "sodium", "labs", "sodiumlabs", "modules", "npm", "packages"],
+    keywords: ["docs", "documentation", "voctal", "modules", "npm", "packages"],
     icons: {
         other: [
             {
@@ -37,8 +37,8 @@ export const metadata: Metadata = {
         card: "summary_large_image",
     },
     openGraph: {
-        siteName: "Sodium Docs",
-        title: "Sodium Docs",
+        siteName: "Voctal Docs",
+        title: "Voctal Docs",
         type: "website",
         description: DESCRIPTION,
     },

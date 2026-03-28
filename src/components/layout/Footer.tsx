@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BASE_URL, DISCORD_URL, GITHUB_URL, SODIUM_LABS_URL } from "@/lib/constants";
+import { BASE_URL, DISCORD_URL, GITHUB_URL, VOCTAL_URL } from "@/lib/constants";
 
 export function Footer() {
     return (
@@ -35,11 +35,11 @@ export function Footer() {
                             <Link
                                 prefetch={false}
                                 className="rounded"
-                                href={SODIUM_LABS_URL}
+                                href={VOCTAL_URL}
                                 rel="external noopener noreferrer"
                                 target="_blank"
                             >
-                                Sodium
+                                Voctal
                             </Link>
                             <Link
                                 prefetch={false}
@@ -48,7 +48,7 @@ export function Footer() {
                                 rel="noopener noreferrer"
                                 target="_blank"
                             >
-                                Sodium Docs
+                                Voctal Docs
                             </Link>
                         </div>
                     </div>

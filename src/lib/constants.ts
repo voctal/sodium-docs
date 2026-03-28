@@ -1,31 +1,30 @@
 export const BASE_URL =
-    process.env.NODE_ENV === "production"
-        ? "https://docs.sodiumlabs.xyz"
-        : `http://localhost:${process.env.PORT ?? 3000}`;
+    process.env.NODE_ENV === "production" ? "https://docs.voctal.dev" : `http://localhost:${process.env.PORT ?? 3000}`;
 
-export const DESCRIPTION = "The documentation of the Sodium packages";
+export const DESCRIPTION = "The documentation of the Voctal packages";
 
-export const SODIUM_LABS_URL = "https://sodiumlabs.xyz";
+export const VOCTAL_URL = "https://voctal.dev";
 
-export const STATUS_URL = "https://status.sodiumlabs.xyz";
+export const STATUS_URL = "https://status.voctal.dev";
 
-export const GITHUB_NAME = "sodium-labs";
+export const GITHUB_NAME = "voctal";
 
-export const GITHUB_URL = "https://github.com/sodium-labs";
+export const GITHUB_URL = "https://github.com/voctal";
 
-export const DISCORD_URL = "https://discord.gg/8PDXWSHH7k";
+export const DISCORD_URL = "https://voctal.dev/discord";
 
-export const SODIUM_LABS_NPM_USER = "@sodiumlabs";
+export const NPM_USER = "@voctal";
 
 export const PACKAGES = [
-    { user: SODIUM_LABS_URL, name: "plume-api", repository: "sodium-labs/plume-api.js" },
-    { user: SODIUM_LABS_URL, name: "plume-url", repository: "sodium-labs/plume-url.js" },
-    { user: SODIUM_LABS_URL, name: "gamecord" },
-    { user: SODIUM_LABS_URL, name: "gdapi" },
-    { user: SODIUM_LABS_URL, name: "ms", monorepo: "utilities" },
-    { user: SODIUM_LABS_URL, name: "cache", monorepo: "utilities" },
-    { user: SODIUM_LABS_URL, name: "snowflake", monorepo: "utilities" },
-    { user: SODIUM_LABS_URL, name: "duration", monorepo: "utilities" },
+    { user: VOCTAL_URL, name: "plume-api", repository: "voctal/plume-api.js" },
+    { user: VOCTAL_URL, name: "plume-url", repository: "voctal/plume-url.js" },
+    { user: VOCTAL_URL, name: "gamecord" },
+    { user: VOCTAL_URL, name: "gdapi" },
+    { user: VOCTAL_URL, name: "pelican" },
+    { user: VOCTAL_URL, name: "ms", monorepo: "utilities" },
+    { user: VOCTAL_URL, name: "cache", monorepo: "utilities" },
+    { user: VOCTAL_URL, name: "snowflake", monorepo: "utilities" },
+    { user: VOCTAL_URL, name: "duration", monorepo: "utilities" },
 ];
 
 /**

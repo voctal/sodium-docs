@@ -44,7 +44,7 @@ type GitHubTreeResponse = {
 
 type PackageVersionsMap = Map<string, Set<string>>;
 
-const GITHUB_OWNER = "sodium-labs";
+const GITHUB_OWNER = "voctal";
 const GITHUB_REPO = "artifacts";
 const GITHUB_BRANCH = "main";
 
