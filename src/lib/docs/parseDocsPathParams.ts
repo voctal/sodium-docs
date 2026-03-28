@@ -6,8 +6,10 @@ export function parseDocsPathParams(item: string[] | undefined): {
         return { entryPoints: [], nodeName: undefined };
     }
 
+    item = item.map(it => decodeURIComponent(it));
+
     const lastElement = item.at(-1);
-    const hasTypeMarker = lastElement?.includes("%3A");
+    const hasTypeMarker = lastElement?.includes(":");
 
     return {
         entryPoints: hasTypeMarker ? item.slice(0, -1) : lastElement?.length === 0 ? [""] : item,
